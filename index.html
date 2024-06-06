@@ -1,0 +1,35 @@
+<HTML>
+    <HEAD>
+        <META charset="UTF-8">
+    <TITLE>Prakt5.4</TITLE>
+    <link rel="stylesheet" href="style.css">
+    </HEAD>
+    <BODY>
+    <SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+        //let, var - використовується для створення змінних
+        
+        // Поки не введемо правильний результат, цикл не завершиться 
+        for( var i = -6; i <= 6; i = i + 2){
+            var x = i;
+            x = prompt('input x');
+        // if (x > 6 || x < -6) {
+		// 	alert("Недопустиме значення", "Помилка");
+		// 	}
+            if(x  < 2){
+                U =  Math.sin(x) + Math.cos(x);
+                document.write (' Перша умова: U = ', U);
+            }
+            else if(x == 2){
+            U = x^4.1;
+            document.write (' Друга умова: U = ', U);
+            }   
+            else if(x > 2){
+                // U = Math.pow(Math.tan(x),3);
+                ctgx = Math.LN10 + Math.sqrt(x);
+                U = ctgx;
+                document.write (' Третя умова: U = ', U);
+            } 
+        }
+    </SCRIPT>
+    </BODY>
+    </HTML>
